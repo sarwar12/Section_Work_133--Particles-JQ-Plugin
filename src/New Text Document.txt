@@ -1,0 +1,27 @@
+### Particles.js JQuery Plugin:
+	https://vincentgarreau.com/particles.js/
+	https://github.com/VincentGarreau/particles.js/
+
+    (*) Include File:
+  ============
+	1) Jquery.min.js
+	2) particles.min.js 
+	3) particles.js ( you get this file code , you must inter codepane link and copy js code and create particle.js . then you link this)
+
+      (*) CSS code:
+   ==========
+	.particles-area {
+	      position: relative;
+	}
+	#particles-js canvas {
+ 	      position: absolute;
+  	      top: 0;
+	      left: 0;
+	      z-index: 9;
+	}
+
+     (*) particles.js (you can change particles value & color)
+	Edit particles.js :
+	     particles -> value: 80
+	     color --> #any hexa code
+	     line_linked --> color --> #any hexa code

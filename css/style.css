@@ -1,0 +1,121 @@
+/* Main CSS Start */
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+body{
+	font-family: sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0 0 15px;
+	font-weight: 700;
+}
+a:focus, input:focus, teaxarea:focus, button:focus{outline: 0 solid;}
+a:hover{
+	text-decoration: none;
+}
+.section-padding{padding: 80px 0;}
+/* Main CSS Stop */
+/* === Masonry Section CSS Start === */
+.porfolio-list{overflow: hidden;}
+.single-portfolio-item {
+	float: left;
+	width: 20%;
+	height: 250px;
+	background-size: cover;
+	background-position: center;
+	background-color: #ddd;
+	position: relative;
+	z-index: 1;
+}
+.single-portfolio-item.large{height: 500px;width: 40%;}
+.single-portfolio-item.wide{width: 40%;}
+.portfolio-bg-1{background-image: url(../img/bg-1.jpg);}
+.portfolio-bg-2{background-image: url(../img/bg-2.jpg);}
+.portfolio-bg-3{background-image: url(../img/bg-3.jpg);}
+.portfolio-bg-4{background-image: url(../img/bg-4.jpg);}
+.portfolio-bg-5{background-image: url(../img/bg-5.jpg);}
+.portfolio-bg-6{background-image: url(../img/bg-6.jpg);}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section-title h2 {
+  color: lightcoral;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 7px;
+  text-transform: uppercase;
+}
+.section-title h2:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 5px;
+  width: 60px;
+  background-color: #ddd;
+  margin-left: -30px;
+}
+
+.single-portfolio-item:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ddd;
+  z-index: -1;
+  opacity: 0;
+  transition: .3s;
+}
+.single-portfolio-item:hover:after {
+  opacity: .7;
+}
+
+.single-portfolio-item a i.fas {
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  width: 100%;
+  color: teal;
+  font-size: 24px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+.single-portfolio-item:hover a i.fas {
+  opacity: 1;
+  visibility: visible;
+}
+/* === Masonry Section CSS Stop === */
+/* === particles.js Section CSS Start === */
+
+.particles-area {
+  background-color: #f76591;
+  color: #fff;
+  font-size: 20px;
+  padding: 80px 0;
+}
+.particles-area h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+	/* Partcles CSS Code */
+.particles-area {
+  position: relative;
+}
+#particles-js canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+/* === particles.js Section CSS Stop === */
